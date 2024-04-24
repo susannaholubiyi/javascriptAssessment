@@ -42,6 +42,20 @@ function getTotalExpense(expenses){
     return totalExpense;
 }
 
+const shoppingList =[{name: "Apples", category: "Fruits", isHealthy: true}, 
+                        {name: "Potato Chips", category: "Snacks", isHealthy: false},
+                        {name: "Carrots", category: "Vegetables", isHealthy: true },
+                        {name: "Chocolate Bars", category: "Sweets", isHealthy: false},
+                        {name: "Greek Yogurt", category: "Dairy", isHealthy: true},
+                        {name: "Soda", category: "Beverages", isHealthy: false}]
+
+function getHealthyItems(shoppingList){
+    let healthyItems = shoppingList.filter(item => item.isHealthy ===true);
+    healthyItems.forEach((item) => {console.log(item)})
+
+}
+console.log(getHealthyItems(shoppingList));
+
 // function exmple(){
 //     let num = [12,3,4,5,9,4,5]
 // num.splice(2,0,2,3);

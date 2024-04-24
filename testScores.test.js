@@ -47,8 +47,10 @@ test ("funtion returns the sclass timings in the afternoon", ()=>{
     expect (answer).toEqual(["1:00 PM", "3:00 PM", "5:00 PM"]);
 }) 
 
+
 test ("function calculates total expense", ()=>{
     let expenses = {groceries: 150, diningOut: 100, transportation: 50, entertainment: 80 }
     let answer = getTotalExpense(expenses);
     expect (answer).toBe(380);
 })
+
