@@ -1,5 +1,5 @@
 const exp = require("constants");
-let {getPassScoreFrom, increaseScoresByFive, getTheSquareOf, assignBookTo, findAfternoonClassesFrom, getTotalExpense} = require("./testScores.js");
+let {getPassScoreFrom, increaseScoresByFive, getTheSquareOf, assignBookTo, findAfternoonClassesFrom, getTotalExpense, getHealthyItems} = require("./testScores.js");
 
 test ("funtion returns scores greater than or equal to 70", ()=>{
     let testScores = [30, 45, 50, 70, 69, 49, 80, 50, 45, 70];
@@ -53,4 +53,6 @@ test ("function calculates total expense", ()=>{
     let answer = getTotalExpense(expenses);
     expect (answer).toBe(380);
 })
+
+
 

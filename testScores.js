@@ -50,13 +50,13 @@ const shoppingList =[{name: "Apples", category: "Fruits", isHealthy: true},
                         {name: "Soda", category: "Beverages", isHealthy: false}]
 
 function getHealthyItems(shoppingList){
+    let listOfHealthyItems = []
     let healthyItems = shoppingList.filter(item => item.isHealthy ===true);
-    healthyItems.forEach((item) => {console.log(item)})
-
+    listOfHealthyItems = healthyItems.forEach((item) => {console.log(item)})
 }
 console.log(getHealthyItems(shoppingList));
 
 
 
 
-module.exports = {getPassScoreFrom, increaseScoresByFive, getTheSquareOf, assignBookTo, findAfternoonClassesFrom, getTotalExpense}
+module.exports = {getPassScoreFrom, increaseScoresByFive, getTheSquareOf, assignBookTo, findAfternoonClassesFrom, getTotalExpense, getHealthyItems}
