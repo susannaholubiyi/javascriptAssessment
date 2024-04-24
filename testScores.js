@@ -56,9 +56,7 @@ function getHealthyItems(shoppingList){
 }
 console.log(getHealthyItems(shoppingList));
 
-// function exmple(){
-//     let num = [12,3,4,5,9,4,5]
-// num.splice(2,0,2,3);
+
 
 
 module.exports = {getPassScoreFrom, increaseScoresByFive, getTheSquareOf, assignBookTo, findAfternoonClassesFrom, getTotalExpense}
