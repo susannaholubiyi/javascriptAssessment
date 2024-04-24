@@ -36,10 +36,10 @@ function findAfternoonClassesFrom(classTime){
 
 function getTotalExpense(expenses){
     let totalExpense = 0
-for (const expense in expenses){
-    totalExpense += expense
-
-}
+    for (const expense in expenses){
+        totalExpense += expenses[expense]
+    }
+    return totalExpense;
 }
 
 // function exmple(){

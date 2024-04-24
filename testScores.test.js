@@ -50,5 +50,5 @@ test ("funtion returns the sclass timings in the afternoon", ()=>{
 test ("function calculates total expense", ()=>{
     let expenses = {groceries: 150, diningOut: 100, transportation: 50, entertainment: 80 }
     let answer = getTotalExpense(expenses);
-    expert (answer).toBe(380);
+    expect (answer).toBe(380);
 })
